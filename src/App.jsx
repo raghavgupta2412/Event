@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import axios from 'axios';
 import { useAuth } from './Contexts/AuthContext';
 import AddTournament from './Pages/AddTournament';
+import ShowTournament from './Pages/ShowTournament';
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/addtournament" element={<AddTournament />} />
-
+          <Route path='/showtournament' element={<ShowTournament />} />
+          
           {/* <Route
             path="/playlists"
             element={<ProtectedRoute children={<Layout><Playlist /></Layout>} />}

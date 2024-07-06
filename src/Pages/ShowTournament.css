@@ -1,0 +1,115 @@
+.show-page{
+    background-color: #0F063D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    color: white;
+}
+.show-container1{
+    padding-top: 5em;
+    background-image: url("../assets/banner-bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head-cont{
+    width: 100vw;
+    /* height: 40vh; */
+    padding: 7rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head-cont h4{
+    font-size: 4rem;
+    font-family: Brush Script MT, Brush Script Std, Lucida Calligraphy, Lucida Handwriting, Apple Chancery, cursive;
+}
+
+
+/* ----------------------- */
+
+.show-container2{
+    background: linear-gradient(#380898,#080248,#0F063D);
+    width: 80%;
+    border-radius: .2em;
+    padding: 2em;
+    position: relative;
+    top: -2em;
+}
+.show-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.part-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.part-1 h3{
+    font-size: 2.5em;
+}
+.part-1 .tags{
+    margin: 1em 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+.part-1 .tags p{
+    background-color: #380898;
+    padding: .5em;
+    font-size: 1em;
+}
+.part-1 .tags span{
+    color: #07DEDB;
+}
+
+.part-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.part-2 h4{
+    font-size: 3em;
+    font-weight: 400;
+    color: #07DEDB;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.part-2 a{
+    text-decoration: none;
+    border-radius: 1.5em;
+    padding: .8em 1.2em;
+    background-image: linear-gradient(#fd1d51,#fcb345);
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.show-container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 5em;
+    width: 60vw;
+}
+.show-container3 h3{
+    font-size: 1.5rem;
+}
+.show-container3 h4{
+    padding: .5rem 0;
+
+}
+.show-container3 p{
+    color: #808080;
+    padding: .2rem;
+}

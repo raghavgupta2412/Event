@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     padding: 2em 0;
+    padding-bottom: 7em;
   }
 .numup .wrapper {
     display: flex;

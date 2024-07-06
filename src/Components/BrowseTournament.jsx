@@ -36,7 +36,7 @@ function BrowseTournament() {
             <div className='card-price'>
                 <span className='price-tag'><img src={Coins} alt="" />PRICE</span>
                 <h4>$600</h4>
-                <a href="">View Tournament</a>
+                <a href="/showtournament">View Tournament</a>
                 <p>Top 3 players win a Cash Prize.</p>
             </div>
         </div>
@@ -58,7 +58,7 @@ function BrowseTournament() {
             <div className='card-price'>
                 <span className='price-tag'><img src={Coins} alt="" />PRICE</span>
                 <h4>$800</h4>
-                <a href="">View Tournament</a>
+                <a href="/showtournament">View Tournament</a>
                 <p>Top 3 players win a Cash Prize.</p>
             </div>
         </div>
@@ -80,7 +80,7 @@ function BrowseTournament() {
             <div className='card-price'>
                 <span className='price-tag'><img src={Coins} alt="" />PRICE</span>
                 <h4>$1000</h4>
-                <a href="">View Tournament</a>
+                <a href="/showtournament">View Tournament</a>
                 <p>Top 3 players win a Cash Prize.</p>
             </div>
         </div>
@@ -102,7 +102,7 @@ function BrowseTournament() {
             <div className='card-price'>
                 <span className='price-tag'><img src={Coins} alt="" />PRICE</span>
                 <h4>$400</h4>
-                <a href="">View Tournament</a>
+                <a href="/showtournament">View Tournament</a>
                 <p>Top 3 players win a Cash Prize.</p>
             </div>
         </div>
