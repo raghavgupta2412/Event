@@ -1,0 +1,10 @@
+.home{
+    color: #ffffff;
+    background-color: #0F063D;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
