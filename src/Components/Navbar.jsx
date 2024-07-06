@@ -17,7 +17,7 @@ function Navbar() {
     <div className='navbar'>
         <div className='logo'><img src={logo} alt="" />GamePlay</div>
         <div className='nav-links'>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
             <a href="#">Tournaments</a>
             <a href="#">About US</a>
             <a href="#">Contact US</a>
