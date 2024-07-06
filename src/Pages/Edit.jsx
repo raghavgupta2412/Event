@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import "./AddTournament.css";
 import axios from "axios";
 
-function AddTournament() {
+function Edit() {
   let name = useRef();
   let prize = useRef();
   let maxEnrollment = useRef();
@@ -11,10 +11,26 @@ function AddTournament() {
   let time = useRef();
   let navigate = useNavigate();
 
+  const [show, setShow] = useState([]);
+  const { id } = useParams();
+  //   console.log(id);
+  useEffect(() => {
+    async function getData() {
+      let response = await axios.get(import.meta.env.VITE_BACKEND + `/show`);
+      let ok = response.data.events;
+      let arr = ok.filter((item, i) => {
+        return item._id === id;
+      });
+      setShow(arr);
+      //   console.log(show);
+    }
+    getData();
+  }, []);
+
   async function handleSubmit() {
     try {
-      let response = await axios.post(
-        import.meta.env.VITE_BACKEND + `/addEvent`,
+      let response = await axios.patch(
+        import.meta.env.VITE_BACKEND + `/update/${id}`,
         {
           name: name.current.value,
           time: time.current.value,
@@ -45,11 +61,17 @@ function AddTournament() {
             id="name"
             placeholder="Enter Event Name"
             ref={name}
+            defaultValue={show[0]?.name}
           />
         </div>
         <div className="input-field">
           <label htmlFor="time">Time of Event</label>
-          <input type="datetime-local" id="time" ref={time} />
+          <input
+            type="datetime-local"
+            id="time"
+            ref={time}
+            defaultValue={new Date(show[0]?.time)}
+          />
         </div>
         <div className="money">
           <div className="input-field">
@@ -60,6 +82,7 @@ function AddTournament() {
               id="fee"
               placeholder="Enter Entry Fees"
               ref={entryfee}
+              defaultValue={show[0]?.entryfee}
             />
           </div>
           <div className="input-field">
@@ -69,6 +92,7 @@ function AddTournament() {
               id="prize"
               placeholder="Enter Prize Money"
               ref={prize}
+              defaultValue={show[0]?.prize}
             />
           </div>
         </div>
@@ -80,15 +104,16 @@ function AddTournament() {
             id="max-team"
             placeholder="Enter No. of Teams"
             ref={maxEnrollment}
+            defaultValue={show[0]?.maxEnrollment}
           />
         </div>
 
         <button className="btn" onClick={handleSubmit}>
-          Add Event
+          Edit Event
         </button>
       </div>
     </div>
   );
 }
 
-export default AddTournament;
+export default Edit;

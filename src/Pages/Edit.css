@@ -1,0 +1,119 @@
+/* light purple - #460AC4 */
+/* dark purple - #380898 */
+/* extra dark purple - #080248 */
+/* grey - #808080c7 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-page {
+  height: 100vh;
+  background-color: #080248;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.back-to-home {
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+  left: 5em;
+  top: 2em;
+}
+.back-to-home:hover {
+  color: #07dedb;
+}
+.login-container {
+  background-color: #460ac4;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.login-container h3 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 600;
+}
+.login-container p {
+  color: #07dedb;
+  font-size: 1em;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 1em;
+  width: 95%;
+}
+.input-field label {
+  color: #ffffff;
+  font-size: 1em;
+  padding-bottom: 0.3em;
+}
+.input-field input {
+  padding: 1em;
+  background-color: #380898;
+  border: none;
+  border-radius: 0.5em;
+  width: 100%;
+}
+.input-field input::placeholder {
+  color: #808080c7;
+}
+.input-field input:focus {
+  color: #ffffff;
+}
+
+.money {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.7em;
+  border: none;
+  border-radius: 0.5em;
+  width: 95%;
+  margin-top: 2em;
+  background-image: linear-gradient(#fd1d51, #fcb345);
+  transition: 0.3s;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.link-div {
+  color: #ffffff;
+  padding-top: 1em;
+  font-size: 1em;
+}
+.link {
+  text-decoration: none;
+  color: #07dedb;
+}
+.pass-change {
+  text-decoration: none;
+  color: #77cd26;
+}
