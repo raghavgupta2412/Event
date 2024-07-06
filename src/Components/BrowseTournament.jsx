@@ -28,6 +28,10 @@ function BrowseTournament() {
                     <div><span>Max Teams</span><p>64</p></div>
                     <div><span>Enrolled</span><p>11</p></div>
                 </div>
+                <div className='edit-tournament'>
+                    <a href="">Edit</a>
+                    <a href="">Delete</a>
+                </div>
             </div>
             <div className='card-price'>
                 <span className='price-tag'><img src={Coins} alt="" />PRICE</span>
