@@ -6,6 +6,7 @@ import Register from './Pages/Register';
 import Home from './Pages/Home';
 import axios from 'axios';
 import { useAuth } from './Contexts/AuthContext';
+import AddTournament from './Pages/AddTournament';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/addtournament" element={<AddTournament />} />
 
           {/* <Route
             path="/playlists"

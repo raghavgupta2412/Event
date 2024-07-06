@@ -11,23 +11,8 @@ function BrowseTournament() {
     <div className='browse-page'>
         <h3>BROWSE TOURNAMENTS</h3>
         <p>Find the perfect Tournament for you. Head to head match where you pick the game, rules and prizes.</p>
-        <div className="filter-div">
-            <div className='filters'>
-                <label htmlFor="status">Status</label>
-                <input type="text" id="status" placeholder='Status' />
-            </div>
-            <div className='filters'>
-                <label htmlFor="search">Search</label>
-                <input type="text" id="search" placeholder='Search' />
-            </div>
-            <div className='filters'>
-                <label htmlFor="size">Team Size</label>
-                <input type="text" id="size" placeholder='Team Size' />
-            </div>
-            <div className='filters'>
-                <label htmlFor="fees">Entry Fees</label>
-                <input type="text" id="fees" placeholder='Entry Fee' />
-            </div>
+        <div className="add-tour">
+            <a href="/addtournament" className="add-btn">Add +</a>
         </div>
         <div className='tournament-card'>
             <img src={Game1} alt="" />
