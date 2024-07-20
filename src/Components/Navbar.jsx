@@ -17,7 +17,7 @@ function Navbar() {
   const { token, currUser } = useAuth();
 
   return (
-    <div className="navbar">
+    <div className="nav">
       <div className="logo">
         <img src={logo} alt="" />
         GamePlay

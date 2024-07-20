@@ -12,7 +12,7 @@ function Home() {
     <div className='home'>
       <Navbar />
       <Landing />
-      <GameShow />
+      {/* <GameShow /> */}
       <BrowseTournament />
       <Numup />
       <Footer />
