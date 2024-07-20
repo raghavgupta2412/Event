@@ -68,7 +68,7 @@ function Register() {
           Signup for Free
         </button>
 
-        <div className="or-separator"> OR </div>
+        {/* <div className="or-separator"> OR </div>
         <div className="signin-options">
           <p>Sign up with your</p>
           <div className="icon-container">
@@ -76,7 +76,7 @@ function Register() {
             <img src={Google} alt="" />
             <img src={Google} alt="" />
           </div>
-        </div>
+        </div> */}
         <div className="link-div">
           Already have an account?{" "}
           <Link className="link" to="/login">

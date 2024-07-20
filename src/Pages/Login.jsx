@@ -65,15 +65,15 @@ function Login() {
           SIGN IN
         </button>
 
-        <div className="or-separator"> OR </div>
-        <div className="signin-options">
+        {/* <div className="or-separator"> OR </div> */}
+        {/* <div className="signin-options">
           <p>Sign in with your</p>
           <div className="icon-container">
             <img src={Google} alt="" />
             <img src={Google} alt="" />
             <img src={Google} alt="" />
           </div>
-        </div>
+        </div> */}
         <div className="link-div">
           Don't have an account?{" "}
           <Link className="link" to="/register">

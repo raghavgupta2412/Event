@@ -7,6 +7,7 @@ import Coins from "../assets/coins.png";
 import "./BrowseTournament.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContext";
 
 function BrowseTournament() {
   const [show, setShow] = useState([]);
@@ -150,6 +151,7 @@ function BrowseTournament() {
 
 function Card({ item, show, setShow }) {
   console.log(item);
+  const { setToken, currUser } = useAuth();
   let naviagte = useNavigate();
   async function handleDelete() {
     let response = await axios.delete(
@@ -199,12 +201,16 @@ function Card({ item, show, setShow }) {
               <p>{item.enrolled}</p>
             </div>
           </div>
-          <div className="edit-tournament">
-            <a href={`/edit/${item._id}`}>Edit</a>
-            <a href="" onClick={handleDelete}>
-              Delete
-            </a>
-          </div>
+          {currUser ? (
+            <div className="edit-tournament">
+              <a href={`/edit/${item._id}`}>Edit</a>
+              <a href="" onClick={handleDelete}>
+                Delete
+              </a>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
         <div className="card-price">
           <span className="price-tag">
@@ -212,7 +218,7 @@ function Card({ item, show, setShow }) {
             PRICE
           </span>
           <h4>{item.prize} $</h4>
-          <a href="">View Tournament</a>
+          <a href="/showtournament">View Tournament</a>
           <p>Top 3 players win a Cash Prize.</p>
         </div>
       </div>

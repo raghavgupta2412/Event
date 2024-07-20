@@ -12,6 +12,9 @@ import Register from "./Pages/Register";
 import Home from "./Pages/Home";
 import axios from "axios";
 import AddTournament from "./Pages/AddTournament";
+import ShowTournament from "./Pages/ShowTournament";
+import Edit from "./Pages/Edit";
+import Logout from "./Pages/Logout";
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/addtournament" element={<AddTournament />} />
           <Route path="/showtournament" element={<ShowTournament />} />
+          <Route path="logout" element={<Logout />} />
 
           {/* <Route
             path="/playlists"
